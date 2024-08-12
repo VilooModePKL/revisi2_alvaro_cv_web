@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cbe188b5fc.js" crossorigin="anonymous"></script>
+  <title>Alvaro Rahadian Personal Portofolio</title>
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+<body>
+  
+  <div class="nav">
+    <navbar id="navbar">
+    <h2>PortoFolio Alvaro Rahadian</h2>
+    
+    <ul>
+      <li class="cool-link"><a href="#welcome-section">Kembali</a></li>
+      <li class="cool-link"><a href="#about">Tentang Saya</a></li>
+      <li class="cool-link"><a href="#projects">Projek</a></li>
+      <li class="cool-link"><a href="#contact">Kontak</a></li>
+    </ul>
+      
+      <div class="menu-toggle">
+            <input type="checkbox" name="" id="">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+  </navbar>
+  </div>
+  
+  <section id="welcome-section">
+    <img class="avatar" src="ww2d3c485-a028-4c5e-9067-2506bb77c5ca.jpg.png" width="220" alt="">
+    <h1>Hi, I am Alvaro</h1>
+    <h2>Front-End Developer</h2>
+    <button><a href="#about">Tentang Saya</a></button>
+  </section>
+  
+  <div class="about">
+    <section id="about">
+    <h2>Tentang Diri Saya</h2>
+    <div class="abouts">
+      <div class="card-body">
+      <h3></h3>
+      <p></p><ol></ol>
+      </p>
+    </div>
+    <div class="card-body">
+      <h3><p><o> seorang Frontend Developer yang memiliki ketertarikan dalam merancang antar muka yang
+        Responsif dan Interaktif memiliki kemampuan dan pengalaman dalam merancang,mengembangkan,dan
+        menguji website dengan teknologi terkini,lalu ada beberapa keahlian saya seperti sangat mahir sangat menggunakan
+      HTML,PHP,CSS</ol></p> </h4>
+     
+        <div class="abouts">
+          <div class="card-body">
+
+        <div class="abouts">
+          <div class="card-body">
+<br>
+<h2><p>Pendidikan</p></h2>
+<br>
+<h2><p>SMK Mahaputra 2022-2025</p></h2>
+<h2>SMP Islam Gravitasi 2019-2022</h2>
+
+           
+        
+            <p></p><ol></ol>
+
+       <h4><p><ol>
+
+        </ol></p>
+        </p></h4>
+        <div>  
+        </div>
+    </div>
+    
+
+    </div>
+  </section>
+  </div>
+  
+  <div class="project">
+     <section id="projects">
+    
+    <h2>Projek Yang Telah Dibuat</h2>
+    
+    <div class="project-grid">
+      <div class="project-tile">
+      <a href=""><img src="projek market nitendo1.jpeg" alt="My Hero Academia Tribute Page"></a>
+        <div class="card-body">
+          <h3>Nitendo Games Market</h3>
+        <p></p>
+        
+        </div>
+        </div>
+      
+        <div class="project-tile">
+      <a href=""><img src="website tiket bioskop1.jpeg" alt="Givir Product Landing Page"></a>
+          <div class="card-body">
+            <h3>Tiket Online</h3>
+        <p></p>
+          
+          </div>
+        </div>
+        
+        <div class="project-tile">
+      <a href=""><img src="Laundry online1.jpeg" alt="Product Survey Form"></a>
+          <div class="card-body">
+            <h3>landing page Laundry online</h3>
+        <p></p>
+          
+          </div>
+    </div>
+        
+        
+        
+          </div>
+      </div>
+    </div>
+    
+       <div class="show">
+
+       </div>
+    
+  </section>
+  </div>
+  
+  <section id="contact">
+    <h2>Mari Kita Bekerja Bersama...</h2>
+    <p>Informasi Lebih Lanjut Periksa Media Sosial Kami.</p>
+    <div class="social-media">
+      
+      <a href="https://www.instagram.com/vilooyours_/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+      <a href="https://wa.me/6281575577990" target="_blank"><i class="fab fa-whatsapp"></i> whatsapp</a>
+    
+     
+    </div>
+  </section>
+  
+  <div class="footer">
+    <p>© 2024,Dibuat Oleh <i class="fas fa-heart"></i> <span>Alvaro</span>.</p>
+  </div>
+  
+    <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        let header = document.querySelector(".nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+      
+      const MenuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('navbar ul');
+
+MenuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+});
+    </script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      nav.classList.remove('slide');
+      $(".menu-toggle input").prop( "checked", false );
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
